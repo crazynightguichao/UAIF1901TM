@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/* 顶部导航栏开始 */
+.nav-box{
+	border-bottom-color: transparent ;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
+	width: 100%;
+	height: 40px;
+	background-color: #550283;
+}
+.nav-bd{
+	width: 1230px;
+	height: 32px;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 12px;
+	position: relative;
+}
+.nav-bd .sn-login-info{
+	height: 32px;
+    line-height: 32px;
+	display: inline-block;
+}
+
+.nav-box .sn-login{
+    padding-left: 20px;
+	padding: 0 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.nav-box .sn-register{
+	padding: 0 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+em{
+    font-style: normal;
+}
+.sn-quick-menu{
+	width: 540px;
+	height: 32px;
+    line-height: 32px;
+	position: absolute;
+    right: 0;
+    top: 0;
+	
+}
+.nav-box .sn-quick-menu li{
+	float: left;
+    position: relative;
+}
+.nav-box .sn-menu{
+    position: relative;
+	
+}
+.nav-box .menu-hd{
+    display: block;
+    height: 40px;
+    cursor: pointer;
+    border: solid #f2f2f2;
+    border-width: 0 1px;
+    position: relative;
+	padding: 0 10px;
+	border-color: #550283;
+	padding-right: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.nav-box .menu-hd:hover{
+	color: #ff0036;
+	background: #fff;
+	padding-bottom: 1px;
+	border-color: #eee;
+	text-decoration: underline;
+}
+.nav-box .sn-quick-menu .menu-hd b{
+    top: 15px;
+	position: absolute;
+    right: 6px;
+    width: 0;
+    height: 0;
+    border-width: 3px;
+    border-style: solid dashed dashed;
+    border-color: #bbb transparent transparent;
+    font-size: 0;
+    line-height: 0;
+}
+.sn-cart{
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+	padding: 0 10px;
+	color: #FFFFFF;
+}	
+.sn-cart i{
+	position: relative;
+    top: -1px;
+	font-size: 12px;
+}
+.sn-cart:hover{
+	color: #ffe013;
+}
+.sn-cart:hover .sn-cart-link{
+	color: #ffe013;
+}
+.sn-cart-link:hover .count{
+	color: #ffe013;
+}
+.sn-cart .sn-cart-link{
+	color: #fff;
+	text-decoration: none;
+}
+.sn-separator{
+	display: inline-block;
+    width: 0;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: top;
+    position: relative;
+    left: 0;
+    font-size: 0;
+    border-left: 1px solid #ccc;
+    margin: 0 2px 0 5px;
+	float: left;
+	top: 9px;
+}
+.menu-hd{
+	font-weight: 400;
+	padding-right: 14px;
+	height: 40px ;
+	border-color: #550283;
+	display: block;
+    cursor: pointer;
+    z-index: 100001;
+    border: solid #f2f2f2;
+    border-width: 0 1px;
+    position: relative;
+	padding: 0 10px;
+	font-size: 12px;
+}
+.sn-sitemap i{
+	font-size: 10px;
+}
+
+/* 顶部导航栏结束 */
+
+/* 搜索栏开始 */
+.header{
+	margin-bottom: 0;
+    min-width: 990px;
+    background: #fff;
+	background-color: rgba(0, 0, 0, 0);
+	height: 130px;
+    margin-top: 0;
+	position: relative;
+}
+.headerLayout{
+	width: 1230px;
+	height: 106px;
+	margin: 0 auto;
+}
+.mall-search{
+	width: 625px;
+	height: 106px;
+    padding-top: 38px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: red;
+}
+/* 搜索栏结束 */

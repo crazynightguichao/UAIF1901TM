@@ -3,13 +3,25 @@
 	padding: 0;
 	list-style: none;
 }
+body{
+	background: url(img/a1.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.activity-area .page-list .page-item, a, a:hover {
+    text-decoration: none;
+}
 /* 顶部导航栏开始 */
 .nav-box{
 	border-bottom-color: transparent ;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
 	width: 100%;
 	height: 40px;
+	background-repeat: repeat;
+	background-position: left;
 	background-color: #550283;
+	z-index: 99999;
+	border-bottom: 1px solid #000000;
 }
 .nav-bd{
 	width: 1230px;
@@ -152,9 +164,9 @@ em{
 	margin-bottom: 0;
     min-width: 990px;
     background: #fff;
-	background-color: rgba(0, 0, 0, 0);
 	height: 130px;
     margin-top: 0;
+	background: #550283;
 	position: relative;
 }
 .headerLayout{
@@ -164,10 +176,411 @@ em{
 }
 .mall-search{
 	width: 625px;
-	height: 106px;
+	height: 70px;
     padding-top: 38px;
 	margin: 0 auto;
 	overflow: hidden;
-	background: red;
+	box-sizing: border-box;
 }
+.search-box{
+	height: 40px;
+	border: 2px solid white ;
+	clear: both;
+	position: relative;
+}
+.search-input{
+	display: block;
+	height: 30px;
+    width: 491px;
+    /* font: 16px/22px arial; */
+    box-sizing: border-box;
+	background: #550283;
+	color: #fff;
+	padding: 0 10px;
+	outline: 0;
+	background: 0 0;
+}
+.s-combobox-placeholder{
+	visibility: visible;
+	font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+	max-width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+	position: absolute;
+    left: 12px;
+    top: 0;
+    z-index: 1;
+	color: #fff;
+	cursor: default;
+}
+.mall-search button{
+	width: 132px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 5px;
+	background-color: #fff ;
+    color: #FF0036;
+	position: absolute;
+	right: 0;
+    top: 0;
+	border: 0;
+	cursor: pointer;
+	overflow: hidden;
+    font-family: '\5FAE\8F6F\96C5\9ED1',arial,"\5b8b\4f53";
+}
+.hot-query{
+	width: 625px;
+	height: 28px;
+    font-size: 14px;
+	margin-top: 10px;
+	margin-left: 288px;
+}
+.hot-query li{
+	display: inline-block;
+    border-left: 1px solid #ccc;
+    line-height: 1.1;
+    padding: 0 12px;
+}
+.hot-query li a{
+	color: #fff;
+	text-decoration: none;
+}
+.hot-query .hot-query-highlight a{
+	color: #ffe013;
+}
+.hot-query li:nth-child(1){
+	display: inline-block;
+	border-left: 1px solid #550283;
+	line-height: 1.1;
+	padding: 0 12px;
+}
+
 /* 搜索栏结束 */
+
+/* .content{
+	width: 100%;
+	height: 6886px;
+	background-color: #f5f5f5;
+	color: #999;
+    font-size: 12px;
+	position: relative;
+    z-index: 10000;
+} */
+/* 轮播图开始 */
+.main-nav{
+	background-color: rgba(0, 0, 0, 0);
+    border-width: 0px;
+	white-space: nowrap;
+    position: relative;
+    font-size: 0;
+    padding-top: 0;
+    height: 35.5px;
+    border-style: solid;
+    border-color: #FF0036;
+}
+.inner-con0 {
+    height: 36px;
+    line-height: 36px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.inner-con1 {
+    width: 1230px;
+    margin: 0 auto;
+    padding-right: 30px;
+}
+.inner-con2 {
+    background-color: white;
+    border-style: solid;
+    border-width: 0px 0px 1.5px;
+    border-color: #FF0036;
+    height: 34.5px;
+	margin-left: 214px;
+    width: 1030px;
+}
+.main-nav a {
+    height: 35px;
+    cursor: pointer;
+    float: left;
+    padding: 0 8px;
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    color: #333;
+    letter-spacing: normal;
+    position: relative;
+}
+.main-nav a img {
+    width: 100px;
+    height: 30px;
+    margin-top: 3px;
+    display: block;
+}
+.main-nav a:hover {
+    color: #FF0036;
+}
+.category-con {
+    position: relative;
+    height: 500px;
+    width: 1230px;
+	margin: 0 auto;
+}
+.category-con .category-inner-con {
+    width: 1230px;
+    padding-right: 30px;
+    position: relative;
+    height: 0;
+    z-index: 100;
+    margin: 0 auto;
+}
+.logo-con {
+    height: 130px;
+    width: 290px;
+    position: absolute;
+    z-index: 100000;
+    margin-top: -167px;
+    margin-left: -45px;
+}
+.logo-con img{
+	width: 100%;
+	height: 100%;
+}
+.category-con .category-tab-nav {
+    position: absolute;
+    z-index: 100;
+    margin-top: -36px;
+    height: 36px;
+    width: 200px;
+    color: #fff;
+    line-height: 36px;
+}
+.category-con .category-tab-nav .category-tab-nav-item {
+    float: left;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+	color: #f0f0f0;
+    cursor: pointer;
+	background-color: #C60A0A;
+}
+.category-tab-nav-item.selected {
+    color: #DD2727;
+	background-color: #eee;
+}
+.category-tab-nav-item.selected:hover{
+	color: #DD2727;
+    background-color: rgba(238,238,238,.95);
+}
+.category-tab-nav-item.meeting-tab {
+    position: relative;
+    color: #ffe013;
+}
+.category-tab-nav-item.meeting-tab:hover{
+	color: #fff;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACAQMAAABIeJ9nAAAAA1BMVEUYFRXvJ83tAAAAAXRSTlPM0jRW/QAAAApJREFUCNdjAAIAAAQAASDSLW8AAAAASUVORK5CYII=);
+
+}
+.normal-nav {
+    background-color: rgba(0,0,0,.55);
+    width: 200px;
+    height: 500px;
+    position: relative;
+    z-index: 11;
+	box-sizing: border-box;
+}
+.nav-item {
+    position: relative;
+    height: 31.2px;
+    line-height: 31.2px;
+    color: #fff;
+    font-size: 14px;
+}
+.nav-item:hover{
+	background: #fff;
+	font-weight: 800;
+}
+.l1:hover a{
+	color: #e54077;
+}
+.l1:hover{
+	color: #e54077;
+}
+.l2:hover a{
+	color: #427def;
+}
+.l2:hover{
+	color: #427def;
+}
+.l3:hover a{
+	color: #fa5c5c;
+}
+.l3:hover{
+	color: #fa5c5c;
+}
+.l4:hover a{
+	color: #f7a831;
+}
+.l4:hover{
+	color: #f7a831;
+}
+
+.nav-item i {
+    display: inline-block;
+	opacity: .5;
+    margin-left: 14px;
+    margin-right: 4px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 16px;
+}
+.nav-item a {
+    height: 31px;
+    color: #fff;
+    font-size: 14px;
+}
+.wheel-box{
+	width: 1230px;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #DE04FD;
+	cursor: pointer;
+}
+.wheel{
+	width: 100%;
+	height: 100%;
+	background: url(//img.alicdn.com/imgextra/i4/42/O1CN01KfkR8R1CBH8T78EFG_!!42-0-luban.jpg_q100.jpg_.webp) no-repeat center center;
+}
+.wheel-img{
+	width: 220px;
+	height: 235px;
+	float: right;
+	margin-top: 8px;
+}
+.wheel-img img{
+	width: 100%;
+	height: 100%;
+	background: #f0f0f0;
+	margin-top: 6px;
+	transition: all .2s linear;
+}
+.wheel-img img:hover{
+	background: #fff;
+	cursor: pointer;
+}
+/* 轮播图结束 */
+
+/* 38女王节开始 */
+.activity-bg {
+    background-image: url();
+}
+.activity-area {
+    margin: auto;
+    width: 1230px;
+    padding-right: 30px;
+}
+.activity-area .page-list {
+    width: 1240px;
+    height: 435px;
+}
+.bg-style{
+    background: url(//img.alicdn.com/tfs/TB1coAFJAvoK1RjSZFwXXciCFXa-600-130.png) center no-repeat;
+    background-size: 300px 65px;
+    height: 105px;
+}
+.group-wrapper {
+    position: relative;
+    float: left;
+    width: 610px;
+    height: 330px;
+    margin-right: 10px;
+}
+.first-page{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 330px;
+    margin: 0;
+	color: #ff0e3c;
+    background-image: url(//img.alicdn.com/tfs/TB1B7IzJpzqK1RjSZFCXXbbxVXa-250-330.png);
+	box-shadow: -5px 5px 10px rgba(0,0,0,.2);
+	cursor: pointer;
+}
+.first-page .page-name {
+    padding-top: 32px;
+	margin: 0;
+    text-align: center;
+	display: block;
+    font-size: 24px;
+    font-weight: 700;
+}
+.page-benefit {
+    display: block;
+    margin-left: 25px;
+    font-size: 18px;
+	margin: 0;
+	text-align: center;
+}
+.activity-area .page-list .page-benefit span {
+    border-radius: 20px;
+    padding: 0 5px;
+	
+}
+.activity-area .page-list .item-pic {
+    position: relative;
+    margin: 20px auto 0;
+    width: 180px;
+    height: 180px;
+    display: block;
+}
+.second-page{
+	position: relative;
+    display: block;
+    background: #fff;
+    width: 350px;
+    height: 160px;
+    margin: 0 0 10px 260px;
+    border-radius: 4px;
+	color: #8300ff;
+    background-image: url(//img.alicdn.com/tfs/TB1SMZUJxnaK1RjSZFBXXcW7VXa-350-160.png);
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+	cursor: pointer;
+}
+.second-page .page-name {
+    display: block;
+    margin-left: 30px;
+    padding-top: 27px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.activity-area .page-list .item-pic.horizontal {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    margin: 0;
+}
+.second-page .page-benefit span{
+    float: left;
+	margin-left: 25px;
+}
+.two{
+	position: relative;
+    display: block;
+    background: #fff;
+    width: 350px;
+    height: 160px;
+    margin: 0 0 10px 260px;
+    border-radius: 4px;
+	color: #009d66;
+    background-image: url(//img.alicdn.com/tfs/TB1iWoqJCrqK1RjSZK9XXXyypXa-350-160.png);
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+/* 38女王节结束 */

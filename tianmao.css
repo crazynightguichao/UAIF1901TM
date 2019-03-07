@@ -1063,6 +1063,7 @@ img, input {
     color: #FF0036;
     line-height: 18px;
     margin: 10px auto;
+	text-align: center;
 }
 /* 天猫超市结束 */
 /* 天猫国际开始 */
@@ -1144,3 +1145,247 @@ img, input {
 	border: 1px solid red;
 }
 /* 天猫国际结束 */
+.full-banner {
+	width: 1230px;
+    height: 90px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.full-banner img {
+    display: block;
+    width: 1620px;
+    height: 90px;
+    margin-left: -165px;
+}
+/* 美丽人生开始 */
+.new-floor-con .floor-line-con .color-mark {
+    display: inline-block;
+    background-color: #333;
+    width: 5px;
+    height: 18px;
+    vertical-align: middle;
+}
+.floor-line-con .floor-name .floor-title {
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.new-floor-con .floor-line-con .floor-sub-name {
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    margin-left: 10px;
+    line-height: 24px;
+    height: 18px;
+}
+/* 美丽人生结束 */
+/* 潮电酷玩开始 */
+/* 潮电酷玩结束 */
+/* 猜你喜欢开始 */
+.wonderful-con {
+    width: 1230px;
+    margin: 30px auto 0;
+}
+.wonderful-con .wonderful-title {
+    color: #666;
+    text-align: center;
+    height: 43px;
+    font-weight: 100;
+}
+.text-ctn {
+    position: relative;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Microsoft YaHei',SimSun,sans-serif,'\65b9\6b63\5170\4ead\9ed1';
+}
+.text-ctn i{
+	position: relative;
+    top: 1px;
+    margin-right: 4px;
+    font-size: 20px;
+    color: #ff0036;
+}
+
+.text-ctn:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: #979797;
+    top: 12px;
+	left: -38px;
+}
+.text-ctn:after {
+    right: -38px;
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 1px;
+	background-color: #979797;
+	top: 12px;
+}
+.love{
+	background: #fff;
+	float: left;
+	margin-left: 12px;
+	margin-bottom: 12px;
+}
+.loves{
+	background: #fff;
+	float: left;
+}
+.love-box{
+	width: 1230px;
+	height: 618px;
+	margin: 0 auto;
+}
+.love img{
+	display: block;
+	margin-left: 25px;
+	
+}
+.loves img{
+	display: block;
+	margin-left: 25px;
+}
+.tm-end.show {
+    display: block;
+}
+.tm-end {
+    background: url(//img.alicdn.com/tps/TB1wQDAPXXXXXXgaFXXXXXXXXXX-62-35.png) no-repeat;
+    position: relative;
+    content: '\20';
+    text-align: center;
+    width: 80px;
+    height: 45px;
+    margin: 0 auto 10px;
+    background-size: cover;
+    z-index: 9;
+}
+/* 猜你喜欢结束 */
+/* 底部开始 */
+.footer {
+	width: 100%;
+    background-image: url(//img.alicdn.com/tfs/TB1v5v3JCzqK1RjSZPcXXbTepXa-1702-546.png);
+    background-size: 1702px 410px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+	min-height: 558px;
+    border-top: 1px solid #D1D7DC;
+    clear: both;
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    position: relative;
+}
+.tmall-ensure {
+    width: 1190px;
+    height: 100px;
+    background: url(//img.alicdn.com/tfs/TB14dANRXXXXXbdXXXXXXXXXXXX-1190-100.jpg) no-repeat;
+    margin: 25px auto;
+    padding: 0;
+	cursor: pointer;
+}
+.tmall-desc {
+    background-image: url(//img.alicdn.com/tfs/TB1dl28RXXXXXbzaFXXXXXXXXXX-136-50.png);
+    background-repeat: no-repeat;
+    background-size: 68px 25px;
+	width: 1190px;
+    padding-top: 22px;
+    height: 190px;
+    margin: auto;
+    border-top: 1px solid #ededed;
+	background: url(data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAZCAMAAAC/3XipAAAABGdB…VYdGRhdGU6bW9kaWZ5ADIwMTctMDItMjBUMDk6NDY6MTQrMDg6MDAJdkpKAAAAAElFTkSuQmCC) 45px bottom no-repeat;
+}
+.tmall-desc:before {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.ensure{
+	float: left;
+    width: 186px;
+    padding-left: 52px;
+}
+.ensure dt{
+	color: #646464;
+    font-size: 16px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+.ensure dd{
+	text-align: left;
+	font-size: 12px;
+}
+.ensure dd a{
+	display: block;
+	width: 100px;
+    overflow: hidden;
+    text-align: left;
+    height: 20px;
+    line-height: 20px;
+    color: #8b8b8b;
+	cursor: pointer;
+}
+.mobile a{
+	width: 105px;
+    height: 105px;
+    line-height: 105px;
+    text-align: center;
+}
+.tmall-copyright {
+    width: 1190px;
+    margin: auto;
+	border-top: 2px solid #FF0036;
+    background: #000;
+    text-align: left;
+    min-height: 177px;
+}
+.footer-tmallinfo {
+    color: #fff;
+    line-height: 25px;
+	margin-left: 12px;
+}
+.footer-otherlink{
+	margin-left: 12px;
+}
+.footer p{
+	padding: 5px 0;
+	font-size: 12px;
+}
+.tmall-copyright a{
+	color: #fff;
+}
+.footer-copyright {
+    line-height: 20px;
+    background: #000;
+    color: #a4a4a4;
+	width: 1178px;
+    margin: 0 auto;
+	font-size: 12px;
+	margin-left: 12px;
+}
+.footer-copyright a {
+    color: #a4a4a4;
+    margin-right: 65px;
+}
+.footer-copyright img{
+	margin-left: 65px;
+}
+.footer-copyright b {
+    display: block;
+    color: #686868;
+    font-weight: 400;
+}
+.footer-fp-img {
+	margin-left: 12px;
+    display: block;
+	cursor: pointer;
+}
+.footer-fp-img img{
+	margin-right: 12px;
+}
+/* 底部结束 */

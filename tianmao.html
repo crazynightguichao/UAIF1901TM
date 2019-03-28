@@ -4,10 +4,22 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="tianmao.css">
-		<link rel="stylesheet" href="//at.alicdn.com/t/font_1045528_pgn7p4d0at8.css">
+		<link rel="stylesheet" href="https://at.alicdn.com/t/font_1045528_jzwuzezi4o.css">
+		<script src="js/tianmao.js"></script>
+		<script src="js/animate.js"></script>
 		<title>天猫官网</title>
 	</head>
 	<body>
+		<!-- 顶部开始 -->
+		<div class="total">
+			<div class="total-container">
+				<i class="iconfont icon-tianmaotmall"></i>
+				<div class="mall-searcher">
+						<input type="text" placeholder="搜索 天猫 商品/品牌/店铺">
+						<div class="submit-btn">搜索</div>
+				</div>
+			</div>
+		</div>
 		<!-- 顶部导航栏开始 -->
 		<div class="nav-box">
 			<div class="nav-bd">
@@ -24,6 +36,10 @@
 								<b></b>
 							</a>
 						</div>
+						<div class="menu-bd">
+							<a href="">已买到的宝贝</a>
+							<a href="">已卖出的宝贝</a>
+						</div>
 					</li>
 					<li class="sn-cart">
 						<i class="iconfont icon-gouwuchekong"></i>
@@ -39,6 +55,10 @@
 								收藏夹
 								<b></b>
 							</a>
+							<div class="menu-bd">
+								<a href="">收藏的宝贝</a>
+								<a href="">收藏的店铺</a>
+							</div>
 						</div>
 					</li>
 					<li class="sn-separator"></li>
@@ -54,20 +74,76 @@
 						</a>
 					</li>
 					<li class="mytaobao">
-						<div class="sn-menu">
+						<div class="sn-menu cc">
 							<a class="menu-hd" href="">
 								商家支持
-								<b></b>
+								<b></b>							
 							</a>
+							<div class="menu-bdc">
+									<a href="">商家：</a>
+									<a href="">商家中心</a>
+									<a href="">天猫规则</a>
+									<a href="">商家入驻</a>
+									<a href="">运营服务</a>
+									<a href="">商家品控</a>
+									<a href="">商家工具</a>
+									<a href="">天猫智库</a>
+									<a href="">喵言喵语</a>
+								</div>
 						</div>
 					</li>
 					<li class="sn-sitemap">
 						<div class="sn-menu">
-							<h3 class="menu-hd">
+							<h3 class="menu-hd ccc">
 								<i class="iconfont icon-daohang"></i>
 								<span>网站导航</span>
 								<b></b>
 							</h3>
+							<div class="daohang-bd">
+								<a href="">热点推荐 Hot</a>
+								<a href="">天猫超市</a>
+								<a href="">内衣新品</a>
+								<a href="">吃乐汇</a>
+								<a href="">天猫超市</a>
+								<a href="">内衣新品</a>
+								<a href="">吃乐汇</a>
+								<a href="">天猫超市</a>
+								<a href="">内衣新品</a>
+								<a href="">吃乐汇</a>
+								<a href="">天猫超市</a>
+								<a href="">内衣新品</a>
+								<a href="">吃乐汇</a>
+								<a href="">天猫超市</a>
+								<a href="">内衣新品</a>
+								<a href="">吃乐汇</a>
+								<a href="">天猫超市</a>
+								<a href="">内衣新品</a>
+								<a href="">吃乐汇</a>
+								<a href="">天猫超市</a>
+								<a href="">内衣新品</a>
+								<a href="">吃乐汇</a>
+								<a href="">天猫超市</a>
+								<a href="">内衣新品</a>
+								<a href="">吃乐汇</a>
+								<a href="">天猫超市</a>
+								<a href="">内衣新品</a>
+								<a href="">吃乐汇</a>
+								<a href="">天猫超市</a>
+								<a href="">内衣新品</a>
+								<a href="">吃乐汇</a>
+								<a href="">天猫超市</a>
+								<a href="">内衣新品</a>
+								<a href="">吃乐汇</a>
+								<a href="">天猫超市</a>
+								<a href="">内衣新品</a>
+								<a href="">吃乐汇</a>
+								<a href="">天猫超市</a>
+								<a href="">内衣新品</a>
+								<a href="">吃乐汇</a>
+								<a href="">天猫超市</a>
+								<a href="">内衣新品</a>
+								<a href="">吃乐汇</a>
+							</div>
 						</div>
 					</li>
 				</ul>
@@ -143,13 +219,55 @@
 				</div>
 			</div>
 		</div>
-		<div class="category-con">
+		<div class="category-con">				
 			<div class="wheel-box">
 				<div class="wheel">
-					<div class="wheel-img">
-						<img src="img/a6.png" alt="">
-						<img src="img/a7.png" alt="">
-					</div>
+					<div class="banner-imgs">						  			
+						<div class="imgBox">							
+							<a href="" class="active" style="background-color:blue">
+								<img src="img/m5.jpg" alt="">
+								<div class="wheel-img">
+									<img src="img/a6.png" alt="">
+									<img src="img/a7.png" alt="">
+								</div>					
+							</a>
+							<a href="" style="background-color:red">
+									<img src="img/m1.jpg" alt="">
+									<div class="wheel-img">
+										<img src="img/a6.png" alt="">
+										<img src="img/a7.png" alt="">
+									</div>
+							</a>
+							<a href="" style="background-color:white">
+									<img src="img/m2.jpg" alt="">
+									<div class="wheel-img">
+										<img src="img/a6.png" alt="">
+										<img src="img/a7.png" alt="">
+									</div>
+							</a>
+							<a href="" style="background-color:yellow">
+									<img src="img/m4.jpg" alt="">
+									<div class="wheel-img">
+										<img src="img/a6.png" alt="">
+										<img src="img/a7.png" alt="">
+									</div>
+							</a>
+							<a href="" style="background-color:brown">
+									<img src="img/m3.jpg" alt="">
+									<div class="wheel-img">
+										<img src="img/a6.png" alt="">
+										<img src="img/a7.png" alt="">
+									</div>
+							</a>
+						</div>
+						<div class="dots">
+							<div class="dot active"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+						</div>
+					</div> 				
 				</div>
 			</div>
 			<div class="category-inner-con">
@@ -166,12 +284,18 @@
 						<a href="">女装</a>
 						/
 						<a href="">内衣</a>
+						<div class="bannerList-r">
+							1
+						</div>
 					</li>
 					<li class="nav-item l2">
 						<i class="iconfont icon-nanzhuang"></i>
 						<a href="">男装</a>
 						/
 						<a href="">运动户外</a>
+						<div class="bannerList-r">
+							2
+						</div>
 					</li>
 					<li class="nav-item l2">
 						<i class="iconfont icon-xie"></i>
@@ -180,12 +304,18 @@
 						<a href="">男鞋</a>
 						/
 						<a href="">箱包</a>
+						<div class="bannerList-r">
+							3
+						</div>
 					</li>
 					<li class="nav-item l1">
 						<i class="iconfont icon-meizhuang"></i>
 						<a href="">美妆</a>
 						/
 						<a href="">个人护理</a>
+						<div class="bannerList-r">
+							4
+						</div>
 					</li>
 					<li class="nav-item l2">
 						<i class="iconfont icon-jewelry"></i>
@@ -194,6 +324,9 @@
 						<a href="">眼镜</a>
 						/
 						<a href="">珠宝饰品</a>
+						<div class="bannerList-r">
+							5
+						</div>
 					</li>
 					<li class="nav-item l2">
 						<i class="iconfont icon-shouji1"></i>
@@ -202,10 +335,16 @@
 						<a href="">数码</a>
 						/
 						<a href="">电脑办公</a>
+						<div class="bannerList-r">
+							6
+						</div>
 					</li>
 					<li class="nav-item l3">
 						<i class="iconfont icon-muyingwanju"></i>
 						<a href="">母婴玩具</a>
+						<div class="bannerList-r">
+							7
+						</div>
 					</li>
 					<li class="nav-item l4">
 						<i class="iconfont icon-crp-shipin"></i>
@@ -214,20 +353,32 @@
 						<a href="">茶酒</a>
 						/
 						<a href="">进口食品</a>
+						<div class="bannerList-r">
+							8
+						</div>
 					</li>
 					<li class="nav-item l4">
 						<i class="iconfont icon-shuiguo"></i>
 						<a href="">生鲜水果</a>
+						<div class="bannerList-r">
+							9
+						</div>
 					</li>
 					<li class="nav-item l2">
 						<i class="iconfont icon-jiadian"></i>
 						<a href="">大家电</a>
 						/
 						<a href="">生活电器</a>
+						<div class="bannerList-r">
+							10
+						</div>
 					</li>
 					<li class="nav-item l3">
 						<i class="iconfont icon-jiajujiancai"></i>
 						<a href="">家具建材</a>
+						<div class="bannerList-r">
+							11
+						</div>
 					</li>
 					<li class="nav-item l2">
 						<i class="iconfont icon-qiche"></i>
@@ -236,6 +387,9 @@
 						<a href="">配件</a>
 						/
 						<a href="">用品</a>
+						<div class="bannerList-r">
+							12
+						</div>
 					</li>
 					<li class="nav-item l4">
 						<i class="iconfont icon-jiafang"></i>
@@ -244,10 +398,16 @@
 						<a href="">家饰</a>
 						/
 						<a href="">鲜花</a>
+						<div class="bannerList-r">
+							13
+						</div>
 					</li>
 					<li class="nav-item l1">
 						<i class="iconfont icon-yiyaobaojian-copy"></i>
 						<a href="">医药保健</a>
+						<div class="bannerList-r">
+							14
+						</div>
 					</li>
 					<li class="nav-item l3">
 						<i class="iconfont icon-kafei"></i>
@@ -256,10 +416,16 @@
 						<a href="">收纳</a>
 						/
 						<a href="">宠物</a>
+						<div class="bannerList-r">
+							15
+						</div>
 					</li>
 					<li class="nav-item l1">
 						<i class="iconfont icon-tushuyinxiang"></i>
 						<a href="">图书音像</a>
+						<div class="bannerList-r">
+							16
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -749,7 +915,7 @@
 		</div>
 		<!-- 图标结束 -->
 		<!-- 天猫超市开始 -->
-		<div class="new-floor-con">
+		<section class="new-floor-con">
 			<div class="floor-line-con">
 				<div class="floor-name">
 					<img src="img/a40.png" alt="">
@@ -852,10 +1018,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- 天猫超市结束 -->
 		<!-- 天猫国际开始 -->
-		<div class="new-floor-con">
+		<section class="new-floor-con">
 			<div class="floor-line-con">
 				<div class="floor-name">
 					<img src="img/a49.png" alt="">
@@ -965,13 +1131,13 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- 天猫国际结束 -->
 		<div class="full-banner">
 			<img src="img/a53.png" alt="">
 		</div>
 		<!-- 美丽人生开始 -->
-		<div class="new-floor-con">
+		<section class="new-floor-con">
 			<div class="floor-line-con">
 				<i class="color-mark"></i>
 				<div class="floor-name">
@@ -1069,10 +1235,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- 美丽人生结束 -->
 		<!-- 潮电酷玩开始 -->
-		<div class="new-floor-con">
+		<section class="new-floor-con">
 			<div class="floor-line-con">
 				<i class="color-mark"></i>
 				<div class="floor-name">
@@ -1170,13 +1336,13 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- 潮电酷玩结束 -->
 		<div class="full-banner">
 			<img src="img/a58.png" alt="">
 		</div>	
 		<!-- 居家生活开始 -->
-		<div class="new-floor-con">
+		<section class="new-floor-con">
 			<div class="floor-line-con">
 				<i class="color-mark"></i>
 				<div class="floor-name">
@@ -1276,11 +1442,11 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- 居家生活结束 -->
 			
 		<!-- 打造爱巢开始 -->
-		<div class="new-floor-con">
+		<section class="new-floor-con">
 			<div class="floor-line-con">
 				<i class="color-mark"></i>
 				<div class="floor-name">
@@ -1378,10 +1544,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- 打造爱巢结束 -->
 		<!-- 户外出行开始 -->
-		<div class="new-floor-con">
+		<section class="new-floor-con">
 			<div class="floor-line-con">
 				<i class="color-mark"></i>
 				<div class="floor-name">
@@ -1476,7 +1642,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- 户外出行结束 -->
 		<!-- 猜你喜欢开始 -->
 		<div class="wonderful-con">
@@ -1487,7 +1653,7 @@
 				</span>
 			</h2>
 		</div>
-		<div class="new-floor-con">
+		<section class="new-floor-con">
 			<div class="floor-line-con">
 				<div class="floor-item-content-wrap loves">
 					<img class="floor-item-img" src="img/a68.png" alt="">
@@ -1540,9 +1706,10 @@
 					<div class="floor-price">￥1649.0</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<div class="tm-end show"></div>
 		<!-- 猜你喜欢结束 -->
+		
 		<!-- 底部开始 -->
 		<div class="footer">
 			<div class="tmall-ensure"></div>
@@ -1664,6 +1831,41 @@
 			</div>
 		</div>
 		<!-- 底部结束 -->
+		<!-- 左侧导航开始 -->
+		<aside class="aside-left">
+			<div class="aside-box nav-header">导航</div>
+			<div class="fplift">
+				<div class="aside-box">
+					<div class="nav-name">天猫超市</div>
+				</div>
+				<div class="aside-box">
+					<div class="nav-name">天猫国际</div>
+				</div>
+				<div class="aside-box">
+					<div class="nav-name">美丽人生</div>
+				</div>
+				<div class="aside-box">
+					<div class="nav-name">潮店酷玩</div>
+				</div>
+				<div class="aside-box">
+					<div class="nav-name">居家生活</div>
+				</div>
+				<div class="aside-box">
+					<div class="nav-name">打造爱巢</div>
+				</div>
+				<div class="aside-box">
+					<div class="nav-name">户外出行</div>
+				</div>
+				<div class="aside-box">
+					<div class="nav-name">猜你喜欢</div>
+				</div>
+				<div class="aside-box nav-back">
+					<i class="iconfont icon-zhiding"></i>
+					顶部
+				</div>
+			</div>
+		</aside>
+		<!-- 左侧导航结束 -->
 		
 	</body>
 </html>

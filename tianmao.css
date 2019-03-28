@@ -3,6 +3,12 @@
 	padding: 0;
 	list-style: none;
 }
+a{
+	text-decoration: none;
+}
+.hot-word-con a{
+    color: #000;
+}
 body{
 	background: #f5f5f5 url(img/a1.png);
 	background-repeat: no-repeat;
@@ -10,6 +16,68 @@ body{
 }
 .activity-area .page-list .page-item, a, a:hover {
     text-decoration: none;
+}
+/* 顶部开始 */
+.total{
+    height: 50px;
+	width: 100%;
+	background: rgba(255, 0, 53, 0.9);
+    transition: all .5s;
+    box-shadow: 0 0 4px #eaeaea;
+	position: fixed;
+	top: -50px;
+	left: 0;
+	z-index: 20;
+}
+.total-container{
+	width: 1226px;
+	height: 100%;
+	margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+.total-container i{
+	display: block;
+	width: 150px;
+    margin-top: 12px;
+    z-index: 20;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+	left: 0;
+	font-size: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.mall-searcher{
+	width: 740px;
+    height: 30px;
+    padding-top: 10px;
+	margin-left: 245px;
+}
+.mall-searcher input{
+	width: 650px;
+	height: 30px;
+	float: left;
+	font-size: 12px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+}
+.submit-btn{
+    float: left;
+	width: 90px;
+    height: 30px;	
+    font-size: 16px;
+    cursor: pointer;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+    background-color: #FF0036;
+    overflow: hidden;
 }
 /* 顶部导航栏开始 */
 .nav-box{
@@ -64,9 +132,62 @@ em{
 	float: left;
     position: relative;
 }
+.menu-bd{
+    width: 94px;
+    height: 0;
+    line-height: 14px;  
+    position: absolute;
+    top: 40px;
+    left: 2px;
+    z-index: 10;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.menu-bd a{
+    display: block;
+    margin-top: 6px;
+    text-align: center;
+    line-height: 20px;
+    color: #666;
+    padding: 0 2px;
+}
+.nav-box .sn-quick-menu li:hover .menu-bd{
+    height: 60px;
+}
+.menu-bdc{
+    width: 160px;
+    height: 0;
+    line-height: 14px;  
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+    overflow: hidden;
+}
+.menu-bdc :nth-child(1){
+    width: 160px;   
+    color: #000;
+    font-weight: 800;
+}
+.menu-bdc a{
+    display: block;
+    width: 70px;
+    height: 14px;
+    display: block;
+    margin-top: 6px;
+    margin-left: 6px;
+    line-height: 14px;
+    color: #666;
+    padding: 0 2px;
+    float: left;
+}
+.cc:hover .menu-bdc{
+    height: 120px;
+}
 .nav-box .sn-menu{
-    position: relative;
-	
+    position: relative;	
 }
 .nav-box .menu-hd{
     display: block;
@@ -75,6 +196,7 @@ em{
     border: solid #f2f2f2;
     border-width: 0 1px;
     position: relative;
+    margin-left: 2px;
 	padding: 0 10px;
 	border-color: #550283;
 	padding-right: 14px;
@@ -136,7 +258,6 @@ em{
     font-size: 0;
     border-left: 1px solid #ccc;
     margin: 0 2px 0 5px;
-	float: left;
 	top: 9px;
 }
 .menu-hd{
@@ -146,7 +267,7 @@ em{
 	border-color: #550283;
 	display: block;
     cursor: pointer;
-    z-index: 100001;
+    z-index: 1;
     border: solid #f2f2f2;
     border-width: 0 1px;
     position: relative;
@@ -156,7 +277,39 @@ em{
 .sn-sitemap i{
 	font-size: 10px;
 }
-
+.daohang-bd{
+    display: none;
+    width: 1198px;
+    height: 126px;
+    background-color: #fff;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 500;
+    overflow: hidden;
+}
+.daohang-bd :nth-child(1){
+    width: 1198px;
+    height: 14px;
+    color: #ff6700;
+    font-size: 16px;
+    margin-left: 8px;
+    margin-top: 18px;
+}
+.daohang-bd a{
+    display: block;
+    width: 70px;
+    height: 14px;
+    margin-top: 12px;
+    margin-left: 8px;
+    line-height: 14px;
+    color: #666;
+    padding: 0 2px;
+    float: left;
+}
+/* .sn-sitemap .sn-menu .menu-hd:hover .daohang-bd{
+    height: 126px;
+} */
 /* 顶部导航栏结束 */
 
 /* 搜索栏开始 */
@@ -189,7 +342,7 @@ em{
 	position: relative;
 	
 }
-.search-input{
+.search-box .search-input{
 	display: block;
 	height: 30px;
     width: 491px;
@@ -352,6 +505,7 @@ em{
 	width: 100%;
 	height: 100%;
 }
+
 .category-con .category-tab-nav {
     position: absolute;
     z-index: 100;
@@ -396,7 +550,7 @@ em{
 	box-sizing: border-box;
 }
 .nav-item {
-    position: relative;
+    /* position: relative; */
     height: 31.2px;
     line-height: 31.2px;
     color: #fff;
@@ -445,6 +599,21 @@ em{
     color: #fff;
     font-size: 14px;
 }
+.bannerList-r{
+	display: none;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    font-size: 36px;
+    z-index: 999;
+    width: 852px;
+    height: 500px;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+
 .wheel-box{
 	width: 1230px;
 	height: 500px;
@@ -459,11 +628,74 @@ em{
 	height: 100%;
 	background: url(//img.alicdn.com/imgextra/i4/42/O1CN01KfkR8R1CBH8T78EFG_!!42-0-luban.jpg_q100.jpg_.webp) no-repeat center center;
 }
+.banner-imgs{
+    height: 500px;
+    width: 1230px;
+    margin: 0 auto;
+    float: left;
+}
+.banner-imgs .imgBox{
+	width: 100%;
+	height: 100%;
+}
+.banner-imgs img{
+	width: 100%;
+    height: 100%;
+}
+.banner-imgs .imgBox a{
+	width: 1230px;
+    height: 500px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .5s;
+}
+.banner-imgs .imgBox .active{
+    opacity: 1;
+}
+.dots{
+	width: 240px;
+	height: 20px;
+	position: absolute;
+	right: 540px;
+	bottom: 30px;
+}
+.dots .active{
+	background-color: #fff;
+	background-color: rgba( 255,255,255,0.6);
+	border-color: #757575;
+	border-color:rgba(0,0,0,0.4);
+}
+.dot{
+	width: 24px;
+    height: 4px;
+    margin: 0 6px;
+    border: 2px solid #fff;
+    border-color: rgba(255,255,255,0.3);
+    text-align: left;
+    overflow: hidden;
+    background: #f5f5f5;
+    background: rgba(0,0,0,0.4);
+	transition: all .2s;
+	float: left;
+	cursor: pointer;
+} 
+.dot:hover{
+	background-color: #fff;
+	background-color: rgba( 255,255,255,0.6);
+	border-color: #757575;
+	border-color:rgba(0,0,0,0.4);
+}
 .wheel-img{
 	width: 220px;
 	height: 235px;
-	float: right;
-	margin-top: 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 8px;
+    z-index: 26;
 }
 .wheel-img img{
 	width: 100%;
@@ -471,7 +703,7 @@ em{
 	background: #f0f0f0;
 	margin-top: 6px;
 	transition: all .2s linear;
-	opacity: 0.9;
+    opacity: 0.9;
 }
 .wheel-img img:hover{
 	background: #fff;
@@ -656,7 +888,7 @@ em{
     line-height: 54px;
     z-index: 99;
     background-size: 18px 18px;
-    background-image: url(//img.alicdn.com/tfs/TB1B7RoaMMPMeJjy1XcXXXpppXa-36-36.png);
+    background-image: url(https://img.alicdn.com/tfs/TB1B7RoaMMPMeJjy1XcXXXpppXa-36-36.png);
     background-repeat: no-repeat;
     background-position: right center;
     padding-right: 14px;
@@ -1264,6 +1496,7 @@ img, input {
     z-index: 9;
 }
 /* 猜你喜欢结束 */
+
 /* 底部开始 */
 .footer {
 	width: 100%;
@@ -1282,7 +1515,7 @@ img, input {
 .tmall-ensure {
     width: 1190px;
     height: 100px;
-    background: url(//img.alicdn.com/tfs/TB14dANRXXXXXbdXXXXXXXXXXXX-1190-100.jpg) no-repeat;
+    background: url(https://img.alicdn.com/tfs/TB14dANRXXXXXbdXXXXXXXXXXXX-1190-100.jpg) no-repeat;
     margin: 25px auto;
     padding: 0;
 	cursor: pointer;
@@ -1389,3 +1622,52 @@ img, input {
 	margin-right: 12px;
 }
 /* 底部结束 */
+/* 左侧导航开始 */
+.aside-left{
+	width: 35px;
+	height: 370px;
+	position: fixed;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -673px;
+	display: none;
+}
+.box{
+	width: 36px;
+	height: 36px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 50px;
+}
+.aside-box{
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1px;
+    overflow: hidden;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.6);
+}
+.nav-header{
+	background-color: #ff0036;
+}
+.nav-name{
+	line-height: 12px;
+    width: 24px;
+    height: 28px;
+    margin: 6px auto;
+}
+.nav-back{
+	line-height: 13px;
+    background-color: rgba(0,0,0,.3);
+}
+.nav-back i{
+    display: block;
+	font-size: 12px;
+    margin-top: 5px;   
+}
+/* 左侧导航结束 */
